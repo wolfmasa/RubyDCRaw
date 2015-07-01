@@ -22,7 +22,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+  require 'RubyDCRaw'
+
+  puts RubyDCRaw.version
+
+  optionHash = {UseCameraWB: true}
+  raw = RubyDCRaw.new("IMG_0001.CR2", optionHash)
+
+  puts "size: #{raw.width}x#{raw.height}"
+  raw.write("output.jpg")
+```
 
 ## Development
 
@@ -32,5 +42,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/RubyDCRaw. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
+Bug reports and pull requests are welcome on GitHub at https://github.com/wolfmasa/RubyDCRaw. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
