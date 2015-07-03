@@ -28,7 +28,7 @@ Or install it yourself as:
   puts RubyDCRaw.version
 
   optionHash = {UseCameraWB: true}
-  raw = RubyDCRaw.new("IMG_0001.CR2", optionHash)
+  raw = RawDecoder.new("IMG_0001.CR2", optionHash)
 
   puts "size: #{raw.width}x#{raw.height}"
   raw.write("output.jpg")
